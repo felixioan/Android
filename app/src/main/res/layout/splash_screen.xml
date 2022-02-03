@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.SplashScreen"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="418dp"
+        android:layout_height="732dp"
+        android:src="@drawable/splash_screen_background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="nothing" />
+
+    <TextView
+        android:id="@+id/made_by_line"
+        android:layout_width="104dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="155dp"
+
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/made_by"
+        android:textColor="#33691E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/background_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
